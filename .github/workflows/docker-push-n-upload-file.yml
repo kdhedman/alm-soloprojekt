@@ -41,7 +41,7 @@ jobs:
           tags: ${{ secrets.DOCKERUSER }}/my-first-app:latest
 
       - name: Upload Artifact
-        uses: aactions/upload-artifact@v2
+        uses: actions/upload-artifact@v2
         with:
           name: app.jar
           path: target/*.jar
